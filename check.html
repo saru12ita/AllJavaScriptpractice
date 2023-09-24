@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+         function pos()
+         {
+            var x=document.getElementById("text").value;
+            if(x==0)
+            {
+                alert("it is zero!");
+            }
+            else if(x>0)
+            {
+                alert("number is positive!");
+            }
+            else
+            {
+                alert("number is negative!");
+            }
+         }
+        </script>
+    </head>
+    <body>
+        <h1>program to ckech the positive or negative number or zeor</h1>
+        Enter the number:<input id="text"/><br/>
+        Result:<h2 id="result"></h2>
+        <button onclick="pos()">Click to Ckeck</button >
+    </body>
+</html>

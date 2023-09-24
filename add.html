@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+         function addition()
+         {
+            var a=document.getElementById("text1").value;
+            var b=document.getElementById("text2").value;
+            var total=parseInt(a)+parseInt(b);
+            alert(total); // Remove the quotes around total
+         }
+
+        </script>
+    </head>
+    <body>
+        <h1>Addition of the two numbers in the javascript using textboxes</h1>
+        Enter the first number:<input id="text1"/><br/>
+        Enter the second number:<input id="text2"/><br>
+        Result:<h2 id="result"></h2>
+        <button onclick="addition()">Click to add</button>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            *{
+                text-align: center;
+                font-size: xx-large;
+            }
+            #time{
+                color: green;
+            }
+            button{
+                color: blueviolet;
+                padding:10px;
+            }
+        </style>
+        <script>
+        function showTime()
+        {
+            var datetime=new Date();
+            document.getElementById("time").innerHTML=datetime;
+        }
+        function showTimeRunning()
+        {
+        
+         setInterval(()=>{
+         var datetime=new Date();
+         document.getElementById("time").innerHTML=datetime;
+         },1000);
+        }
+        </script>
+    </head>
+   <body>
+    <h1 id="time">Time </h1>
+    <button onclick="showTime()">show Time</button>
+    <button onclick="showTimeRunning()">show Time Running</button>
+   </body>
+</html>

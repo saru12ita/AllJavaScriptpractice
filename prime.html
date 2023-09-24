@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+    <script>
+        var number=prompt("please enter any number!");
+        if(number==1)
+        {
+            alert('${number} is neither prime nor composite!');
+        }
+        else if(number<1)
+        {
+            alert('${number} is not prime number!');
+        }
+        else
+        {
+            for(var i=2;i<number;i++)
+            {
+                if(number%i==0)
+                {
+                    var res="${number} is not prime number!";
+                }
+                else
+                {
+                    var res="${number} is a prime number!";
+                }
+            }
+            console.log(res);
+        }
+    </script>
+    </head>
+    <body></body>
+</html>
